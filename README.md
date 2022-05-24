@@ -1,4 +1,10 @@
 # Генерация фотореалистичных изображений по рисункам (скетчам)
+
+- [Sketch2face](#sketch2face)
+- [Pix2pixHD](#pix2pixhd)
+- [Метрики L1 и L2](#метрики-l1-и-l2)
+- [FID](#fid)
+- [Генерация скетчей](#генерация-скетчей)
 ## Sketch2face
 Описание модели приведено в статье: https://web.stanford.edu/~jxgong/docs/sketch2face.pdf  
 Ссылка на оригинальный код: https://github.com/juliagong/sketch2face
