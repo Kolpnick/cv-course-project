@@ -11,7 +11,9 @@
 
 Команда запуска обучения sketch2face модели:
 ```
-!python /sketch2face/train.py --dataroot path_to_dataset --name model_name --model sketch2face --direction sketch2face --dataset_mode cuhk --max_epochs train_epochs_amount
+!python /sketch2face/train.py --dataroot path_to_dataset --name model_name \
+--model sketch2face --direction sketch2face --dataset_mode cuhk \
+--max_epochs train_epochs_amount
 ```
 
 *path_to_dataset* - путь к директории, в которой должны содержаться папки train и test, в каждой из этих папок файлы должны быть представлены следующим образом: скетч должен оканчиваться на -sz1.jpg, реальное изображение должно оканчиваться на .jpg  
@@ -22,7 +24,9 @@ Checkpoints модели сохраняются в папку /checkpoints/model
 
 Команда запуска генерации фотореалистичных изображений на основе скетчей с помощью заранее обученной sketch2face модели:
 ```
-!python /sketch2face/train.py --dataroot path_to_dataset --name model_name --model sketch2face --direction sketch2face --dataset_mode cuhk --phase test --num_test images_amount
+python /sketch2face/train.py --dataroot path_to_dataset --name model_name \
+--model sketch2face --direction sketch2face --dataset_mode cuhk --phase test \
+--num_test images_amount
 ```
 
 *path_to_dataset* - путь к директории, в которой должны содержаться папки train и test, в каждой из этих папок файлы должны быть представлены следующим образом: скетч должен оканчиваться на -sz1.jpg, реальное изображение должно оканчиваться на .jpg  
